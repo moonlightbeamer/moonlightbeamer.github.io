@@ -188,8 +188,8 @@ resource gce instance {
 - [ ] Outline my portfolio
 - [ ] Introduce myself to the world
 
-## <p align=center>Certificate Logo</p>
-![GCP Cloud Architect](https://templates.images.credential.net/16590181582433100721069374350922.png)
+## <p align=center>Certificate Badge</p>
+<img src="https://templates.images.credential.net/16590181582433100721069374350922.png" alt="GCP Cloud Architect" style="width:150px;height:150px"/>
 ![GCP Cloud Engineer](https://templates.images.credential.net/16590187933301617801540872729153.png)
 ![GCP Data Engineer](https://templates.images.credential.net/16590189412502689960209276019161.png)
 ![Azure Administrator](https://images.credly.com/size/680x680/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png)
