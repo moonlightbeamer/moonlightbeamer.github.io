@@ -131,6 +131,7 @@ ul li::before {
   width: 6px;
   height: 6px;
   background-color: var(--site-context-highlight-color);
+  border-radius: 50% !important;
 }
 
 /* Sections */
