@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lin Zhu | Portfolio</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -149,67 +150,82 @@
   <div class="container section">
     
     <h2 class="section-heading">Project Case Studies</h2>
-    <div class="horizontal-scroll-grid">
-      
-      <div class="project-card">
-        <h4>Agentic AI Application - AWS DevOps Lead</h4>
-        <p class="body-text">Architected and implemented infrastructure for a Global Asset Management firm utilizing 7 marketing agents built with LangChain/LangGraph. Deployed to AWS EKS targeting OpenAI/Gemini LLMs, incorporating RDS/Aurora, KMS, IAM, Kong and Apache in a robust CI/CD pipeline.</p>
-      </div>
+    <!-- Project Case Studies Carousel -->
+    <div class="swiper case-studies-swiper" style="margin-bottom: calc(var(--spacing-base) * 12); padding-bottom: 50px;">
+      <div class="swiper-wrapper">
+        
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="grid-2">
+            <div class="project-card">
+              <h4>Agentic AI Application - AWS DevOps Lead</h4>
+              <p class="body-text">Architected and implemented infrastructure for a Global Asset Management firm utilizing 7 marketing agents built with LangChain/LangGraph. Deployed to AWS EKS targeting OpenAI/Gemini LLMs, incorporating RDS/Aurora, KMS, IAM, Kong and Apache in a robust CI/CD pipeline.</p>
+            </div>
+            <div class="project-card">
+              <h4>Data Warehouse Migration - GCP Architect</h4>
+              <p class="body-text">Architected and led Data Ingestion and Transformation for a Global Food Distributor. Integrated data from Salesforce, SAP, and AS/400 to build Bronze/Silver/Gold layered Cloud Data Warehouses, whilst managing both onshore and offshore teams.</p>
+            </div>
+            <div class="project-card">
+              <h4>GenAI Telco Transformation</h4>
+              <p class="body-text">Designed and implemented the GenAI foundation for a National Telco leveraging GCP Vertex AI. Enabled IAP on Cloud Run services running specialized Python agent functions to aid in 3G infrastructure decommissioning.</p>
+            </div>
+            <div class="project-card">
+              <h4>Cloud Landing Zone & IaC Automation</h4>
+              <p class="body-text">Led a Global Banking institution's Terraform automation deployment, architecting a multi-continent landing zone with strict data sovereignty requirements using Chef, Ansible, and Packer to empower independent Business Unit IT self-service.</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="project-card">
-        <h4>Data Warehouse Migration - GCP Architect</h4>
-        <p class="body-text">Architected and led Data Ingestion and Transformation for a Global Food Distributor. Integrated data from Salesforce, SAP, and AS/400 to build Bronze/Silver/Gold layered Cloud Data Warehouses, whilst managing both onshore and offshore teams.</p>
-      </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="grid-2">
+            <div class="project-card">
+              <h4>Cloud Native Application Migration</h4>
+              <p class="body-text">Architected and led application migrations from Tanzu Application Services to GCP Cloud Native services (primarily GKE and Cloud Run) for a National Healthcare Provider.</p>
+            </div>
+            <div class="project-card">
+              <h4>Bigdata Cloud Landing Zone</h4>
+              <p class="body-text">A national telco migrated from on-premises Hadoop/Spark based solution to GCP native bigdata and MLOps solutions including CloudStorage, BigQuery, Vertex AI Dataflow, Composer(Airflow), Cloud Function and PubSub/Kafka, using Terraform IaC and Gitlab.</p>
+            </div>
+            <div class="project-card">
+              <h4>Multi-Cloud Architecture Design</h4>
+              <p class="body-text">A Government agency gained a Multi-Hybrid-Cloud reference architecture for SaaS, PaaS, CaaS and IaaS workloads through a series of workshops.</p>
+            </div>
+            <div class="project-card">
+              <h4>Azure Disaster Recovery Enablement</h4>
+              <p class="body-text">A global confectionary manufacturer re-platformed their 120 mission critical applications from dual colo Datacenters to dual Azure regions to ensure all scenarios adopt best and cost-effective solutions including SQL Always-On and Oracle DataGuard components.</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="project-card">
-        <h4>GenAI Telco Transformation</h4>
-        <p class="body-text">Designed and implemented the GenAI foundation for a National Telco leveraging GCP Vertex AI. Enabled IAP on Cloud Run services running specialized Python agent functions to aid in 3G infrastructure decommissioning.</p>
-      </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="grid-2">
+            <div class="project-card">
+              <h4>VMware to Public Cloud Migration</h4>
+              <p class="body-text">A federal government agency moved full on-premises datacenter to Azure including all servers, storage, database, data warehouse, backup, office, ERP, CRM, telephony, etc.</p>
+            </div>
+            <div class="project-card">
+              <h4>Born in the Cloud Medicare Solution</h4>
+              <p class="body-text">A medical record company adopted public cloud with DRaaS utilizing two separated datacenters, managed Veeam backup, geo-redundant Cisco firewall, netscaler load balancer with dual factor authentication, and DDoS service.</p>
+            </div>
+            <div class="project-card">
+              <h4>Government RFP Overhaul</h4>
+              <p class="body-text">Won a critical service government RFP by proposing a more robust and cost-effective solution involving virtualization, server, SAN and most importantly, networking instead of following a pre-approved generic design.</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="project-card">
-        <h4>Cloud Landing Zone & IaC Automation</h4>
-        <p class="body-text">Led a Global Banking institution's Terraform automation deployment, architecting a multi-continent landing zone with strict data sovereignty requirements using Chef, Ansible, and Packer to empower independent Business Unit IT self-service.</p>
       </div>
-
-      <div class="project-card">
-        <h4>Cloud Native Application Migration</h4>
-        <p class="body-text">Architected and led application migrations from Tanzu Application Services to GCP Cloud Native services (primarily GKE and Cloud Run) for a National Healthcare Provider.</p>
-      </div>
-
-      <div class="project-card">
-        <h4>Bigdata Cloud Landing Zone</h4>
-        <p class="body-text">A national telco migrated from on-premises Hadoop/Spark based solution to GCP native bigdata and MLOps solutions including CloudStorage, BigQuery, Vertex AI Dataflow, Composer(Airflow), Cloud Function and PubSub/Kafka, using Terraform IaC and Gitlab.</p>
-      </div>
-
-      <div class="project-card">
-        <h4>Multi-Cloud Architecture Design</h4>
-        <p class="body-text">A Government agency gained a Multi-Hybrid-Cloud reference architecture for SaaS, PaaS, CaaS and IaaS workloads through a series of workshops.</p>
-      </div>
-
-      <div class="project-card">
-        <h4>Azure Disaster Recovery Enablement</h4>
-        <p class="body-text">A global confectionary manufacturer re-platformed their 120 mission critical applications from dual colo Datacenters to dual Azure regions to ensure all scenarios adopt best and cost-effective solutions including SQL Always-On and Oracle DataGuard components.</p>
-      </div>
-
-      <div class="project-card">
-        <h4>VMware to Public Cloud Migration</h4>
-        <p class="body-text">A federal government agency moved full on-premises datacenter to Azure including all servers, storage, database, data warehouse, backup, office, ERP, CRM, telephony, etc.</p>
-      </div>
-
-      <div class="project-card">
-        <h4>Born in the Cloud Medicare Solution</h4>
-        <p class="body-text">A medical record company adopted public cloud with DRaaS utilizing two separated datacenters, managed Veeam backup, geo-redundant Cisco firewall, netscaler load balancer with dual factor authentication, and DDoS service.</p>
-      </div>
-
-      <div class="project-card">
-        <h4>Government RFP Overhaul</h4>
-        <p class="body-text">Won a critical service government RFP by proposing a more robust and cost-effective solution involving virtualization, server, SAN and most importantly, networking instead of following a pre-approved generic design.</p>
-      </div>
-
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
     <h2 class="section-heading">Trusted by Global Clients</h2>
-    <div class="horizontal-scroll-grid" style="margin-bottom: calc(var(--spacing-base) * 12); border-left: 2px solid var(--color-black); padding-left: calc(var(--spacing-base) * 3); padding-bottom: 16px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: calc(var(--spacing-base) * 12); border-left: 2px solid var(--color-black); padding-left: calc(var(--spacing-base) * 3); padding-bottom: 16px;">
     <a href="https://www.canada.ca" target="_blank" class="project-card client-tile" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; height: 64px; min-width: 140px; padding: 12px; text-decoration: none; border-radius: 0;">
         <img src="https://logo.clearbit.com/canada.ca" alt="Shared Services Canada" title="Shared Services Canada" style="max-height: 28px; max-width: 100%; object-fit: contain;" onerror="this.outerHTML='<span style=\'color: var(--color-nearblack); font-weight: 700; font-size: 14px;\'>Shared Services Canada</span>'"/>
       </a>
@@ -407,7 +423,28 @@
         <img src="assets/images/badges/image25.png" alt="Certification Badge" style="max-height: 150px;"/>
       </div>
     </div>
+    </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.case-studies-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>

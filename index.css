@@ -349,3 +349,38 @@ ul li::before {
     flex: 0 0 450px;
   }
 }
+
+/* Swiper Customizations */
+.case-studies-swiper {
+  width: 100%;
+  padding-bottom: 50px !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-black) !important;
+  opacity: 0.3;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: var(--color-black) !important;
+}
+
+/* Ensure padding on cards so that navigation buttons don't overlap text */
+.swiper-slide {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* On mobile, remove slide padding so it takes full width but buttons might overlay */
+@media (max-width: 768px) {
+  .swiper-slide {
+    padding: 0 10px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    display: none !important; /* Hide arrows on mobile, rely on swipe */
+  }
+}
