@@ -275,6 +275,27 @@ ul li::before {
   border-color: var(--site-context-focus-color);
 }
 
+.client-tile {
+  opacity: 0.65;
+  transition: opacity 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-tile:hover {
+  opacity: 1;
+  background-color: #fafafa;
+  color: inherit;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.client-tile img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.client-tile:hover img {
+  filter: grayscale(0%);
+}
+
 .badges-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
