@@ -320,3 +320,39 @@ ul li::before {
 .bg-dark-section h3 {
   color: var(--color-white);
 }
+
+/* Horizontal Scroll Grid */
+.horizontal-scroll-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: calc(var(--spacing-base) * 4);
+  padding-bottom: 24px;
+  margin-bottom: calc(var(--spacing-base) * 12);
+  /* Scroll Snap optional but feels modern */
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-dark) transparent;
+}
+
+.horizontal-scroll-grid::-webkit-scrollbar {
+  height: 8px;
+}
+.horizontal-scroll-grid::-webkit-scrollbar-track {
+  background: transparent; 
+}
+.horizontal-scroll-grid::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray-dark); 
+  border-radius: 4px;
+}
+
+.horizontal-scroll-grid .project-card {
+  flex: 0 0 350px;
+  scroll-snap-align: start;
+  /* Override width mapping from generic grids if any */
+}
+
+@media(min-width: 768px) {
+  .horizontal-scroll-grid .project-card {
+    flex: 0 0 450px;
+  }
+}
