@@ -400,6 +400,7 @@ ul li::before {
 .swiper-pagination-bullet {
   background: var(--color-black) !important;
   opacity: 0.3;
+  border-radius: 50% !important;
 }
 
 .swiper-pagination-bullet-active {
