@@ -426,3 +426,34 @@ ul li::before {
     display: none !important; /* Hide arrows on mobile, rely on swipe */
   }
 }
+
+/* Marquee Animation */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: calc(var(--spacing-base) * 12);
+  padding-bottom: 16px;
+  /* Optional fade edges */
+  mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+}
+
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  gap: 24px;
+  align-items: center;
+  animation: scroll-marquee 40s linear infinite;
+  padding-right: 24px; /* same as gap to make joining seamless */
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
